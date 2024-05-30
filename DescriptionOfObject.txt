@@ -1,0 +1,15 @@
+HTTP -------------------
+Description: The http module in Node.js is used to create an HTTP server that listens for requests from clients (such as web browsers) and sends responses. It allows for handling HTTP requests and responses and is essential for web development in Node.js.
+
+Usage: Used to create web servers, handle HTTP requests and responses, and build RESTful APIs.
+
+FILESYSTEM-----------------
+Description: The fs module provides an API for interacting with the file system in a manner closely modeled around standard POSIX functions. It allows for reading and writing files, as well as performing other file system operations like renaming, deleting, and creating directories.
+
+Usage: Used for reading from and writing to files, creating and deleting files and directories, and other file system operations.
+
+EVENT----------------------
+
+Description: The events module provides a way of handling events in Node.js. It includes the EventEmitter class, which can be used to create, fire, and listen for custom events.
+
+Usage: Used to handle custom events and asynchronous programming. Essential for creating event-driven applications.

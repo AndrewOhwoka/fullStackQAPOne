@@ -1,0 +1,80 @@
+---important node.js core global objetcs---
+GitHub Copilot
+Node.js has several important core global objects. Here are some of them:
+
+global: This is the global namespace object. In browsers, the top-level scope is the global scope. That means that in browsers if you're in the global scope var something will define a global variable. In Node.js this is different. The top-level scope is not the global scope; var something inside a Node.js module will be local to that module.
+
+process: This is an object containing information about the current Node.js process. Through this object, you can access environment information such as command-line arguments, operating system and user environment.
+
+Buffer: The Buffer class is a global type for dealing with binary data directly. It can be used to read data from files, or to pack and unpack data to send over the network.
+
+console: Used to print to stdout and stderr. It has several methods like console.log(), console.error(), console.warn(), etc.
+
+setTimeout, clearTimeout, setInterval, clearInterval, setImmediate, clearImmediate: The timers API provides a whole bunch of functions that execute code after a set period of time.
+
+__dirname: The directory name of the current module. This is the equivalent of path.dirname(__filename).
+
+__filename: The file name of the current module. This is the resolved absolute path of the current module file.
+
+module, exports, require: These objects are related to the module system of Node.js. require is a function to use modules (Node.js files), exports is an object that will be exposed as a module, and module is the current module instance.
+
+Remember that these are all available in the global scope, which means they can be accessed from anywhere in your Node.js code.
+
+---copilot ms---
+Certainly! In Node.js, global objects are essential building blocks that provide access to various functionalities across different modules. Let’s explore some of the important ones:
+
+process: This object provides information about the current Node.js process, environment variables, and command-line arguments. You can access it directly without requiring any specific module1.
+require(): Although it might seem global, require() is specific to CommonJS modules. It allows you to import other modules and their functionality into your code.
+module and exports: These objects are used for creating and managing modules. module represents the current module, and exports allows you to expose functions, objects, or values from a module.
+console: The reliable console object is used for logging messages. You can use console.log() to output information to the console.
+setTimeout() and setInterval(): These functions allow you to schedule code execution after a specified delay or at regular intervals.
+__dirname and __filename: These variables provide the directory name and filename of the current module, respectively.
+Remember that while some global objects are accessible from anywhere in your code, others are limited to the module’s scope. These built-in objects make Node.js development more efficient and powerful23. If you have any specific questions about these global objects or need further details, feel free to ask! 😊
+
+what is fullstack--
+**Full-stack development** refers to the practice of creating and managing all parts of a software system or web application. It encompasses both the **front-end** (user interface) and the **back-end** (server infrastructure, business logic, and database management). A full-stack developer possesses the skills to work with various programming languages and technologies across the entire application stack¹²³. They can handle tasks such as:
+
+- **Front-end (Client Software)**:
+  - **HTML**
+  - **CSS**
+  - **JavaScript** (including libraries like **jQuery**, **Angular**, or **Vue**)
+  - Styling frameworks like **Bootstrap** or **W3.CSS**
+  - Handling the **HTML DOM**
+  - Working with data formats like **JSON** and **XML**
+
+- **Back-end (Server Software)**:
+  - **Node.js**, **Express.js**, or other server-side technologies
+  - **PHP**, **ASP**, **Python**, or other server-side languages
+  - Database management using **SQL**, **SQLite**, or **MongoDB**
+  - Understanding server deployment and hosting platforms like **Azure** and **Heroku**
+
+Popular full-stack development stacks include:
+
+- **LAMP stack**: JavaScript, Linux, Apache, MySQL, PHP
+- **LEMP stack**: JavaScript, Linux, Nginx, MySQL, PHP
+- **MEAN stack**: JavaScript, MongoDB, Express, AngularJS, Node.js
+- **Django stack**: JavaScript, Python, Django, MySQL
+- **Ruby on Rails**: JavaScript, Ruby, SQLite, Rails
+
+Advantages of being a full-stack developer include the ability to rapidly prototype, provide help to team members, reduce project costs, and better understand new technologies. However, it can also be complex and dependent on individual skills¹⁴⁵. If you have any more questions, feel free to ask! 😊
+
+Source: Conversation with Copilot, 5/26/2024
+(1) What is Full Stack - W3Schools. https://www.w3schools.com/whatis/whatis_fullstack.asp.
+(2) What Is Full-Stack? Complete Guide To Full-Stack Development. https://bing.com/search?q=what+is+fullstack.
+(3) What is Full Stack Development? A Complete Guide - Flexiple. https://flexiple.com/fullstack/deep-dive.
+(4) The Ultimate Guide to Full-Stack Development: Technologies, Frameworks .... https://www.kwantify.com/the-ultimate-guide-to-full-stack-development-technologies-frameworks-and-stacks-explained/.
+(5) What is Full Stack Web Development | BrowserStack. https://www.browserstack.com/guide/full-stack-development.
+
+----node.js---
+Node.js is an open-source, cross-platform, JavaScript runtime environment that executes JavaScript code outside of a web browser. It allows developers to use JavaScript to write command line tools and for server-side scripting—running scripts server-side to produce dynamic web page content before the page is sent to the user's web browser.
+
+Node.js is built on Chrome's V8 JavaScript engine and uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices. 
+
+---npm -----
+It also comes with a built-in package manager called npm, which is the world's largest software registry.
+
+Node.js can be used for a variety of applications such as web application backend, real-time services (like chat servers, collaborative tools, etc.), APIs, microservices, and much more.
+
+---- 10 core Node modules--
+https://towardsdev.com/core-node-modules-you-must-know-as-a-nodejs-developer-181df49d558
+
