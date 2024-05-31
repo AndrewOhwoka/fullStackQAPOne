@@ -13,3 +13,9 @@ EVENT----------------------
 Description: The events module provides a way of handling events in Node.js. It includes the EventEmitter class, which can be used to create, fire, and listen for custom events.
 
 Usage: Used to handle custom events and asynchronous programming. Essential for creating event-driven applications.
+
+
+CONSOLE ------------------- 
+Description: The console module in Node.js provides a simple debugging console that is similar to the JavaScript console mechanism provided by web browsers. It provides methods for logging information, displaying errors, warnings, and other data types like tables and objects.
+
+Usage: Used for logging information during development, debugging code, displaying errors and warnings, timing operations, and asserting conditions in the code.
